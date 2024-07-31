@@ -101,7 +101,7 @@ def go_to_product_and_add_to_cart(product_name):
 
 # 使用範例
 # product='“br-m3g”-softbox-basic-pants-bone'
-product='T1-END.93 - “Nessie” Logo Tee - Black'
+product='T1-END.93 - “Nessie” Logo Tee'
 go_to_product_and_add_to_cart(product)
 
 
