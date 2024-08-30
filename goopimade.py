@@ -66,7 +66,7 @@ def go_to_product_and_add_to_cart(product_name,product_type='type1',product_size
     if  not login_action=="pass":
         # 開啟登入網頁
         driver.get(login_url)
-        print("請手動登入...")
+        
 
         # 等待用戶手動登入完成並確認登入成功
         try:
@@ -175,16 +175,16 @@ targetButton.click();
     targetButton.click();
     """
     #執行js提交訂單
-    # driver.execute_script(checkout_script)
+    driver.execute_script(checkout_script)
     
 
 
 # 使用範例
 
-product='“LM-S01” G-Lightweight Utility Shorts - L-Gray'
+product='“BY-01T” Oversized Cutting Tee by GOOPiMADE - Gray'
 # product='“BR-M3G” SOFTBOX Basic Pants - Shadow'
 product_type='type1' #type1:有size type2:無size(包包類)
-product_size='1號'
+product_size='2號'
 go_to_product_and_add_to_cart(product,product_type,product_size)
 
 
